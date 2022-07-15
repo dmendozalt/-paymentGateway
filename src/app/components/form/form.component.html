@@ -4,7 +4,8 @@
     <div class="mb-4">
       <h2>Confirm order and pay</h2>
       <span
-        >Feel confident with your payment, since we have an excellent security.</span
+        >Feel confident with your payment, since we have an excellent
+        security.</span
       >
     </div>
 
@@ -12,7 +13,7 @@
       <div class="col-md-8">
         <div class="card p-3">
           <h6 class="text-uppercase">Payment details</h6>
-          <div class="inputbox mt-3">
+          <!-- <div class="inputbox mt-3">
             <input
               type="text"
               name="name"
@@ -20,7 +21,7 @@
               formControlName="nameOnCard"
             />
             <span>Name on card</span>
-          </div>
+          </div> -->
 
           <div class="row">
             <div class="col-md-6">
@@ -43,7 +44,6 @@
                     name="name"
                     class="form-control"
                     formControlName="expiry"
-                    
                   />
                   <span>Expiry</span>
                 </div>
@@ -54,7 +54,6 @@
                     name="name"
                     class="form-control"
                     formControlName="cw"
-                    
                   />
                   <span>CVV</span>
                 </div>
@@ -62,7 +61,7 @@
             </div>
           </div>
 
-          <div class="mt-4 mb-4">
+          <!-- <div class="mt-4 mb-4">
             <h6 class="text-uppercase">Billing Address</h6>
 
             <div class="row mt-3">
@@ -85,7 +84,6 @@
                     name="name"
                     class="form-control"
                     formControlName="city"
-                    
                   />
                   <span>City</span>
                 </div>
@@ -100,7 +98,6 @@
                     name="name"
                     class="form-control"
                     formControlName="state"
-                    
                   />
                   <span>State/Province</span>
                 </div>
@@ -113,19 +110,20 @@
                     name="name"
                     class="form-control"
                     formControlName="zip"
-                    
                   />
                   <span>Zip code</span>
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div class="mt-4 mb-4 d-flex justify-content-between">
           <span>Previous step</span>
 
-          <button class="btn btn-success px-3" (click)="sendPayment">Pay ${{paid | number}}</button>
+          <button class="btn btn-success px-3" (click)="(sendPayment)">
+            Pay ${{ paid | number }}
+          </button>
         </div>
       </div>
 
@@ -133,7 +131,7 @@
         <div class="card card-blue p-3 text-white mb-3">
           <span>You have to pay</span>
           <div class="d-flex flex-row align-items-end mb-3">
-            <h1 class="mb-0 yellow">${{paid | number}}</h1>
+            <h1 class="mb-0 yellow">${{ paid | number }}</h1>
           </div>
 
           <span>Your payment will be reflected in your Advent account</span>

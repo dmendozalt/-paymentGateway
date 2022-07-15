@@ -18,11 +18,12 @@ export class FormComponent implements OnInit {
       cardName: ['', Validators.required],
       expiry: ['', Validators.required],
       cw: ['', Validators.required],
-      billingAddress: ['', Validators.required],
-      streetAdress: ['', Validators.required],
-      city: ['', Validators.required],
-      state: ['', Validators.required],
-      zip: ['', Validators.required],
+
+      // billingAddress: ['', Validators.required],
+      // streetAdress: ['', Validators.required],
+      // city: ['', Validators.required],
+      // state: ['', Validators.required],
+      // zip: ['', Validators.required],
       
       
 
