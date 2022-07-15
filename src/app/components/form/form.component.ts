@@ -9,9 +9,11 @@ import { Router } from '@angular/router';
 })
 export class FormComponent implements OnInit {
 
+  paid: number = 5000
+
   paytmentForm: FormGroup
   constructor(private fb: FormBuilder, private router: Router) { 
-    this.paytmentForm = fb.group({
+    this.paytmentForm = this.fb.group({
       nomberCard: ['', Validators.required],
       cardNomber: ['', Validators.required],
       expiry: ['', Validators.required],
@@ -28,6 +30,10 @@ export class FormComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  sendPayment(){
+    console.log(`Paydment ${this.paytmentForm.value}`);
   }
 
 }
