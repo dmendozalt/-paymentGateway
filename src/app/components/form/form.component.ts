@@ -14,8 +14,8 @@ export class FormComponent implements OnInit {
   paytmentForm: FormGroup
   constructor(private fb: FormBuilder, private router: Router) { 
     this.paytmentForm = this.fb.group({
-      nameOnCard: ['', Validators.required],
       cardName: ['', Validators.required],
+      expoMonth: ['', Validators.required],
       expiry: ['', Validators.required],
       cw: ['', Validators.required],
 
