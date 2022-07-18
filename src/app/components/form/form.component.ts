@@ -48,10 +48,8 @@ export class FormComponent implements OnInit {
   }
 
   retrievePayment(paymentId: string) {
-    this.cardService
-      .getPayment('pi_3LLvtsHNoFBenqbd11ANaYQJ')
-      .subscribe((response: any) => {
-        console.log(response);
-      });
+    this.cardService.getPayment(paymentId).subscribe((response: any) => {
+      console.log(response);
+    });
   }
 }
